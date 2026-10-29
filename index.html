@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Fardeau de la Connaissance</title>
+<meta name="description" content="Journal du Monarque des Ombres, légué à Iroh Jin. Objet de jeu de rôle.">
+<meta name="theme-color" content="#0b0810">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Shippori+Mincho:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+</svg>
+
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<header id="nav" hidden>
+  <a class="brand" href="#/" data-hover><span class="stamp-s">影</span><span class="bt">Le Fardeau de la Connaissance</span></a>
+  <nav>
+    <a href="#/sommaire" data-hover>Sommaire</a>
+    <a href="#/annexe/hierarchies" data-hover>Annexes</a>
+    <button id="snd" type="button" aria-label="Activer ou couper la musique" title="Musique d'ambiance"><i></i><i></i><i></i><i></i></button>
+  </nav>
+</header>
+<div id="progress" aria-hidden="true"></div>
+
+<main id="view" tabindex="-1"></main>
+
+<div id="wipe" aria-hidden="true"></div>
+<div id="tip" role="tooltip" hidden></div>
+<canvas id="trail" aria-hidden="true"></canvas>
+<div id="cur-ring" aria-hidden="true"></div>
+<div id="cur-dot" aria-hidden="true"></div>
+
+<script src="content.js"></script>
+<script src="riddles.js"></script>
+<script src="scramble.js"></script>
+<script src="art.js"></script>
+<script src="fx.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
